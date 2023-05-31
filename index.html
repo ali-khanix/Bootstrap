@@ -1,18 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meet new and interesting dogs nearby" />
+    <meta name="keywords" content="tindog-pet-tinder for dogs" />
 
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+
+    <!-- Css Stylesheets -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="Css/style.css" />
+
+    <!-- Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>Bootstrap installation</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header class="header" id="header">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg p-3 navbar-dark">
+        <a href="" class="navbar-brand">tindog</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="aria-expanded"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto flex-row-reverse d-flex gap-3">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="title">
+      <div class="container-fluid row">
+        <div class="col-lg-6">
+          <h1 class="pb-4">Meet new and intresting dogs nearby</h1>
+          <button type="button" class="btn btn-dark btn-lg">
+            <i class="fa-brands fa-apple px-1"></i>Download
+          </button>
+          <button type="button" class="btn btn-outline-light btn-lg mx-3">
+            <i class="fa-brands fa-google-play px-1"></i>Download
+          </button>
+        </div>
+
+        <div class="col-lg-6">
+          <img
+            class="img__hero"
+            src="Images/iphone6.png"
+            alt="image of a dog in hero section"
+          />
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- Features -->
+      <section id="features">
+        <div>
+          <div>
+            <div>
+              <h3>Easy to use</h3>
+              <p>So easy to use, even your dog could do it</p>
+            </div>
+
+            <div>
+              <h3>Elite Clientele</h3>
+              <p>We have all the dogs, the greates dogs.</p>
+            </div>
+
+            <div>
+              <h3>Guaranteed to work</h3>
+              <p>Find the love of your dog's life or your money back.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="testimonials">
+        <div>
+          <div>
+            <div>
+              <h2>
+                I no longer have to sniff other dogs for love. I've found the
+                hottest Corgi on TinDog. Woof.
+              </h2>
+              <img src="Images/dog-img.jpg" alt="dog-profile" />
+              <em>Pebbles, New York</em>
+            </div>
+
+            <div>
+              <h2>
+                My dog used to be so lonely, but with TinDog's help, they've
+                found the love of their life.
+              </h2>
+              <img src="Images/lady-img.jpg" alt="lady with dog" />
+              <em>Beverly, Illinois</em>
+            </div>
+          </div>
+
+          <a href="#">
+            <span></span>
+            <span>Previous</span>
+          </a>
+
+          <a href="#">
+            <span></span>
+            <span>Next</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Press -->
+      <section id="press">
+        <img src="Images/TechCrunch.png" alt="tc-logo" />
+        <img src="Images/tnw.png" alt="tnw-logo" />
+        <img src="Images/bizinsider.png" alt="biz-insider-logo" />
+        <img src="Images/mashable.png" alt="mashable-logo" />
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing">
+        <div>
+          <h2>A Plan for Every Dog's Needs</h2>
+          <p>Simple and affordable price plans for your and your dog.</p>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <h3>Chihuahua</h3>
+                </div>
+                <div>
+                  <h2>Free</h2>
+                  <p>5 Matches Per Day</p>
+                  <p>10 Messages Per Day</p>
+                  <p>Unlimited App Usage</p>
+                  <button>Sign Up</button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <h3>Labrador</h3>
+                </div>
+                <div>
+                  <h2>$49 / mo</h2>
+                  <p>Unlimited Matches</p>
+                  <p>Unlimited Messages</p>
+                  <p>Unlimited App Usage</p>
+                  <button>Sign Up</button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <h3>Mastiff</h3>
+                </div>
+                <div>
+                  <h2>$99 / mo</h2>
+                  <p>Pirority Listing</p>
+                  <p>Unlimited Matches / Messages</p>
+                  <p>Unlimited App Usage</p>
+                  <button>Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+
+      <section id="cta">
+        <div>
+          <h3>Find the True Love of Your Dog's Life Today.</h3>
+          <button>Download</button>
+          <button>Download</button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+
+      <footer id="footer">
+        <p>© Copyright 2020 TinDog</p>
+      </footer>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
