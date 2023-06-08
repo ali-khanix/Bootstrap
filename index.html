@@ -17,6 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/mediaQuery.css" />
 
     <!-- Font Awsome -->
     <link
@@ -26,75 +27,82 @@
     <title>Bootstrap installation</title>
   </head>
   <body>
-    <header class="header" id="header">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg p-3 navbar-dark">
-        <a href="" class="navbar-brand">tindog</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="aria-expanded"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav ms-auto flex-row-reverse d-flex gap-3">
-            <li class="nav-item">
-              <a href="#" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">About Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <section class="hero-section">
+      <div class="hero">
+        <header class="header pb-2" id="header">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="" class="navbar-brand">tindog</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="aria-expanded"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav ms-auto flex-row-reverse d-flex gap-4">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#footer" class="nav-link">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
 
-    <!-- Hero -->
-    <section id="title">
-      <div class="container-fluid row">
-        <div class="col-lg-6">
-          <h1 class="pb-4">Meet new and intresting dogs nearby</h1>
-          <button type="button" class="btn btn-dark btn-lg">
-            <i class="fa-brands fa-apple px-1"></i>Download
-          </button>
-          <button type="button" class="btn btn-outline-light btn-lg mx-3">
-            <i class="fa-brands fa-google-play px-1"></i>Download
-          </button>
-        </div>
+        <!-- Hero -->
+        <section id="title">
+          <div class="container-fluid row">
+            <div class="col-lg-6">
+              <h1 class="pb-4">Meet new and intresting dogs nearby</h1>
+              <button type="button" class="btn btn-dark btn-lg">
+                <i class="fa-brands fa-apple px-1"></i>Download
+              </button>
+              <button type="button" class="btn btn-outline-light btn-lg mx-3">
+                <i class="fa-brands fa-google-play px-1"></i>Download
+              </button>
+            </div>
 
-        <div class="col-lg-6">
-          <img
-            class="img__hero"
-            src="Images/iphone6.png"
-            alt="image of a dog in hero section"
-          />
-        </div>
+            <div class="col-lg-6 d-flex justify-content-center">
+              <img
+                class="img__hero"
+                src="Images/iphone6.png"
+                alt="image of a dog in hero section"
+              />
+            </div>
+          </div>
+        </section>
       </div>
     </section>
 
     <main>
       <!-- Features -->
       <section id="features">
-        <div>
-          <div>
-            <div>
+        <div class="container-fluid mt-5">
+          <div class="row justify-content-center text-center gap-5">
+            <div class="col-lg-3 col-md-12">
+              <i class="fas fa-check-circle"></i>
               <h3>Easy to use</h3>
               <p>So easy to use, even your dog could do it</p>
             </div>
 
-            <div>
+            <div class="col-lg-3 col-md-12">
+              <i class="fas fa-bullseye"></i>
               <h3>Elite Clientele</h3>
               <p>We have all the dogs, the greates dogs.</p>
             </div>
 
-            <div>
+            <div class="col-lg-3 col-md-12">
+              <i class="fas fa-heart"></i>
               <h3>Guaranteed to work</h3>
               <p>Find the love of your dog's life or your money back.</p>
             </div>
@@ -104,93 +112,112 @@
 
       <!-- Testimonials -->
       <section id="testimonials">
-        <div>
-          <div>
-            <div>
-              <h2>
-                I no longer have to sniff other dogs for love. I've found the
-                hottest Corgi on TinDog. Woof.
-              </h2>
-              <img src="Images/dog-img.jpg" alt="dog-profile" />
-              <em>Pebbles, New York</em>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner pt-5">
+            <div class="carousel-item active">
+              <div class="container text-center">
+                <h2 class="heading-secondary">
+                  I no longer have to sniff other dogs for love. I've found the
+                  hottest Corgi on TinDog. Woof.
+                </h2>
+                <img
+                  class="testimonials__img"
+                  src="Images/dog-img.jpg"
+                  alt="dog-profile"
+                />
+                <em class="testimonials__em px-3">Pebbles, New York</em>
+              </div>
             </div>
-
-            <div>
-              <h2>
-                My dog used to be so lonely, but with TinDog's help, they've
-                found the love of their life.
-              </h2>
-              <img src="Images/lady-img.jpg" alt="lady with dog" />
-              <em>Beverly, Illinois</em>
+            <div class="carousel-item">
+              <div class="container text-center">
+                <h2 class="heading-secondary">
+                  My dog used to be so lonely, but with TinDog's help, they've
+                  found the love of their life.
+                </h2>
+                <img
+                  class="testimonials__img"
+                  src="Images/lady-img.jpg"
+                  alt="lady with dog"
+                />
+                <em class="testimonials__em px-3">Beverly, Illinois</em>
+              </div>
             </div>
           </div>
-
-          <a href="#">
-            <span></span>
-            <span>Previous</span>
-          </a>
-
-          <a href="#">
-            <span></span>
-            <span>Next</span>
-          </a>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
 
       <!-- Press -->
-      <section id="press">
-        <img src="Images/TechCrunch.png" alt="tc-logo" />
-        <img src="Images/tnw.png" alt="tnw-logo" />
-        <img src="Images/bizinsider.png" alt="biz-insider-logo" />
-        <img src="Images/mashable.png" alt="mashable-logo" />
+      <section id="press" class="py-5 mb-5">
+        <img class="press__img" src="Images/TechCrunch.png" alt="tc-logo" />
+        <img class="press__img" src="Images/tnw.png" alt="tnw-logo" />
+        <img
+          class="press__img"
+          src="Images/bizinsider.png"
+          alt="biz-insider-logo"
+        />
+        <img class="press__img" src="Images/mashable.png" alt="mashable-logo" />
       </section>
 
       <!-- Pricing -->
       <section id="pricing">
-        <div>
-          <h2>A Plan for Every Dog's Needs</h2>
-          <p>Simple and affordable price plans for your and your dog.</p>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <h3>Chihuahua</h3>
-                </div>
-                <div>
-                  <h2>Free</h2>
-                  <p>5 Matches Per Day</p>
-                  <p>10 Messages Per Day</p>
-                  <p>Unlimited App Usage</p>
-                  <button>Sign Up</button>
-                </div>
+        <div class="container-fluid text-center">
+          <h2 class="heading-secondary">A Plan for Every Dog's Needs</h2>
+          <p class="sub-heading__small">
+            Simple and affordable price plans for your and your dog.
+          </p>
+
+          <div class="cards-container row justify-content-center gap-5">
+            <div class="card col-lg-3">
+              <div class="card-body">
+                <h3 class="card-title heading-tertiary py-2">Chlhuahua</h3>
+                <p class="card-text">Free</p>
+                <p class="card-text">5 Matches per day</p>
+                <p class="card-text">10 messages per day</p>
+                <p class="card-text">Unlimited app usage</p>
+                <a href="#" class="btn btn-outline-dark">Sign Up</a>
               </div>
             </div>
-            <div>
-              <div>
-                <div>
-                  <h3>Labrador</h3>
-                </div>
-                <div>
-                  <h2>$49 / mo</h2>
-                  <p>Unlimited Matches</p>
-                  <p>Unlimited Messages</p>
-                  <p>Unlimited App Usage</p>
-                  <button>Sign Up</button>
-                </div>
+            <div class="card col-lg-3">
+              <div class="card-body">
+                <h3 class="card-title heading-tertiary py-2">Labrador</h3>
+                <p class="card-text">$49 / Mo</p>
+                <p class="card-text">Unlimited matches</p>
+                <p class="card-text">$Unlimited messages</p>
+                <p class="card-text">Unlimited app usage</p>
+                <a href="#" class="btn btn-primary">Sign Up</a>
               </div>
             </div>
-            <div>
-              <div>
-                <div>
-                  <h3>Mastiff</h3>
-                </div>
-                <div>
-                  <h2>$99 / mo</h2>
-                  <p>Pirority Listing</p>
-                  <p>Unlimited Matches / Messages</p>
-                  <p>Unlimited App Usage</p>
-                  <button>Sign Up</button>
-                </div>
+            <div class="card col-lg-3">
+              <div class="card-body">
+                <h3 class="card-title py-2">Mastiff</h3>
+                <p class="card-text">$99 / Mo</p>
+                <p class="card-text">Primary listing</p>
+                <p class="card-text">Unlimited matches</p>
+                <p class="card-text">Unlimited messages</p>
+                <p class="card-text">Unlimited app usage</p>
+                <a href="#" class="btn btn-primary">Sign Up</a>
               </div>
             </div>
           </div>
@@ -200,17 +227,37 @@
       <!-- Call to Action -->
 
       <section id="cta">
-        <div>
-          <h3>Find the True Love of Your Dog's Life Today.</h3>
-          <button>Download</button>
-          <button>Download</button>
+        <div class="container-fluid cta-container text-center py-5">
+          <h3 class="heading-tertiary pb-3">
+            Find the True Love of Your Dog's Life Today.
+          </h3>
+          <button type="button" class="btn btn-dark btn-lg">
+            <i class="fa-brands fa-apple px-1"></i>Download
+          </button>
+          <button type="button" class="btn btn-light btn-lg mx-3">
+            <i class="fa-brands fa-google-play px-1"></i>Download
+          </button>
         </div>
       </section>
 
       <!-- Footer -->
 
-      <footer id="footer">
-        <p>© Copyright 2020 TinDog</p>
+      <footer id="footer" class="text-center my-5">
+        <div class="social-icons-container">
+          <a href="https://twitter.com" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://facebook.com" class="social-link">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://instagram.com" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://google.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p class="footer-copy">© Copyright 2020 TinDog</p>
       </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>

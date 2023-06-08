@@ -1,0 +1,18 @@
+@media (max-width: 1028px) {
+  .img__hero {
+    width: 60%;
+    transform: none;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  main {
+    transform: none;
+  }
+
+  #title .col-lg-6 {
+    margin-bottom: 3rem;
+  }
+}
